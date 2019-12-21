@@ -1,12 +1,16 @@
-class metodo:
-    def metod_iva(self):
-        precio = int (input('Ingrese el precio del producto: '))
-        cantidad = int (input('Ingrese la cantidad comprada: '))
-        neto = int(precio * cantidad)
-        iva = (neto * 19)/100
-        total = (neto + iva)
-        print('El valor neto del la compra es:  {}'.format(neto))
-        print('El valor del iva es           :  {}'.format(iva))
-        print('El valor total de la compra es:  {}'.format(total))
-
-    
+class rut_clase:    
+    rut = input('ingrese rut: ')
+    def rut_metodo (listaFinal):
+        lista = [self.rut]
+        lista.insert(2,'.')
+        lista.insert(6,'.')
+        lista.insert(10,'-')
+        i=0
+        listaStr =[]
+        while(i<12):
+            listaStr.append(str(lista[i]))
+            i=i+1
+        listaFinal =''.join(listaStr)
+        return (listaFinal)
+    rut_listo = rut_metodo()
+    print(rut_listo)
